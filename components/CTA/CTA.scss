@@ -1,0 +1,132 @@
+.cta {
+
+    padding:120px 8%;
+
+    background:url("../../assets/images/cta.jpg") center/cover no-repeat;
+
+    position:relative;
+
+    text-align:center;
+
+}
+
+.cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(15,23,42,.85);
+
+}
+
+.cta-overlay{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+    margin:auto;
+
+    color:white;
+
+}
+
+.cta h2{
+
+    font-size:50px;
+
+    margin-bottom:25px;
+
+}
+
+.cta p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#e2e8f0;
+
+    margin-bottom:40px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.whatsapp-btn,
+.contact-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.whatsapp-btn{
+
+    background:#25D366;
+
+    color:white;
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.contact-btn{
+
+    background:#f97316;
+
+    color:white;
+
+}
+
+.contact-btn:hover{
+
+    background:#ea580c;
+
+    transform:translateY(-4px);
+
+}
+
+@media(max-width:768px){
+
+    .cta h2{
+
+        font-size:36px;
+
+    }
+
+}
